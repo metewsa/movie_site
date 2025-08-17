@@ -12,6 +12,9 @@ h3{
 }
 
 .topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     overflow: hidden;
     background-color: black;
     padding: 10px;
@@ -19,17 +22,14 @@ h3{
 }
 
 .topnav .active{
-    float: left;
-    display: block;
     color: white;
-    text-align: center;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size:1.2rem;
     text-transform: uppercase;
 }
 
 .topnav .search_container{
-    float: right;
+    display: flex;
     align-items: center;
 }
 
@@ -51,9 +51,26 @@ input {
     padding: 10px;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
 .thumbnail{
-    height: 350px;
-    width:300px;
     border-radius: 25px;
-    float: left;
+    width: 90%;
+    height: auto;
+
+}
+.column{
+    flex:1 1 200px;
+    max-width: 250px;
+}
+.card{
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+    background-color: #151f30;
 }
